@@ -74,19 +74,3 @@ Then open `index.html` in your browser.
 ## If You Are Hiring or Building
 
 If you are hiring an engineer or need a developer to build your next project, reach out through LinkedIn or start with this repo and my live project links above.
-
----
-
-## Materials I Need From You to Make This README Even More Convincing
-
-Send me any of the following and I will upgrade this into a killer, evidence-driven pitch:
-
-- 2-5 quantified wins (ex: load time reduced %, conversion lift %, bugs reduced, cycle time improved)
-- Your exact target roles (titles, seniority, full-time vs contract)
-- Industries you want to attract (SaaS, healthcare, fintech, local business, etc.)
-- Testimonials or short quotes from clients/managers
-- 1-3 additional projects with links and your specific contributions
-- Preferred contact email and booking link (if you want those added)
-- Geographic/remote preference and work authorization details
-
-Once you send these, I will tailor this README directly for employers and business owners so it is conversion-focused and hard to ignore.
