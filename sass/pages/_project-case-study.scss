@@ -1,9 +1,9 @@
 .project-cs-hero {
-  color: #fff;
+  color: $colorTextPrimary;
   background: linear-gradient(
       to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
+      rgba($colorBgBody, 0.95),
+      rgba($themeClrPrimary, 0.14)
     ),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
@@ -36,21 +36,47 @@
   &__cta {
     margin-top: 5rem;
     text-align: center;
+
+    .btn--hero-cta {
+      min-width: 29rem;
+      text-align: center;
+    }
+
+    .btn--hero-dark {
+      background: #0f0f10;
+      color: $type-color-strong;
+      border-color: #0f0f10;
+    }
+
+    .btn--hero-light {
+      background: $type-color-strong;
+      color: $type-color-inverse;
+      border-color: $type-color-strong;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.18);
+    }
+
+    @include respond(phone) {
+      .btn--hero-cta {
+        min-width: 0;
+        width: 100%;
+      }
+    }
   }
 }
 
 .project-details {
+  background: $colorBgSurface;
   &__content {
     padding: 8rem 0;
     max-width: 90rem;
     margin: auto;
 
     &-title {
-      font-weight: 700;
-      font-size: 2.8rem;
+      @include type-subheading;
+      color: $type-color-strong;
       margin-bottom: 3rem;
       @include respond(phone) {
-        font-size: 2.4rem;
+        font-size: $type-size-subheading-mobile;
       }
     }
   }
@@ -62,6 +88,7 @@
 
   &__showcase-img {
     width: 100%;
+    filter: saturate(0.86) contrast(1.02);
   }
   &__content-main {
     width: 100%;
@@ -72,14 +99,33 @@
     margin: 0 0 7rem 0;
 
     &-para {
-      font-size: 1.8rem;
-      line-height: 1.7;
-      color: grey;
+      @include type-body;
+      color: $type-color-muted;
       margin-bottom: 2rem;
     }
   }
   &__tools-used {
     margin: 0 0 7rem 0;
+
+    .skill-sub {
+      @include type-detail;
+      color: $type-color-muted;
+      margin: 2.2rem 0 1.2rem 0;
+    }
+
+    .skills {
+      gap: 1rem;
+      margin-bottom: 2.4rem;
+    }
+
+    .skills__skill {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    .skills:last-of-type {
+      margin-bottom: 0;
+    }
 
     &-list {
       display: flex;
@@ -89,11 +135,19 @@
       padding: 1rem 2rem;
       margin-bottom: 1.5rem;
       margin-right: 1.5rem;
-      font-size: 1.6rem;
-      background: rgba(#999, 0.2);
+      font-size: $type-size-body;
+      background: rgba($colorTextMuted, 0.16);
       border-radius: $commonBorderRadius;
       font-weight: 600;
-      color: #777;
+      color: $type-color-strong;
+      text-transform: $type-case-ui;
+      letter-spacing: $type-track-ui;
+    }
+
+    @include respond(phone) {
+      .skill-sub {
+        margin-top: 2rem;
+      }
     }
   }
   &__links {

@@ -1,3 +1,67 @@
-$themeClrPrimary: #0062b9;
+$themeClrPrimary: #d7d8db;
+$colorBgBody: #121212;
+$colorBgSurface: #1a1a1b;
+$colorBgSurfaceAlt: #232324;
+$colorTextPrimary: #f5f5f1;
+$colorTextMuted: #9a9a9d;
+$colorBorderSubtle: #4a4a4a;
+$colorInputBg: #1a1a1b;
+$colorInputBorder: #4a4a4a;
 
-$commonBorderRadius: 5px;
+$commonBorderRadius: 2px;
+
+$fontPrimary: 'Inter', sans-serif;
+$fontMono: 'IBM Plex Mono', monospace;
+
+// Typography system
+$type-color-strong: $colorTextPrimary;
+$type-color-muted: $colorTextMuted;
+$type-color-inverse: #0f0f10;
+$type-color-accent: $themeClrPrimary;
+
+$type-size-display: 6.2rem;
+$type-size-display-mobile: 4.2rem;
+$type-size-heading: 3rem;
+$type-size-heading-mobile: 3rem;
+$type-size-subheading: 2rem;
+$type-size-subheading-mobile: 2rem;
+$type-size-intake-title: 3rem;
+$type-size-lead: 1.15rem;
+$type-size-lead-mobile: 1.05rem;
+$type-size-body: 1rem;
+$type-size-body-mobile: 1rem;
+$type-size-detail: 0.7rem;
+$type-size-detail-mobile: 0.7rem;
+$type-size-micro: 0.7rem;
+
+$type-weight-display: 800;
+$type-weight-heading: 700;
+$type-weight-subheading: 600;
+$type-weight-lead: 500;
+$type-weight-body: 400;
+$type-weight-detail: 500;
+
+$type-track-display: 0em;
+$type-track-heading: 0em;
+$type-track-subheading: 0em;
+$type-track-lead: 0em;
+$type-track-body: 0em;
+$type-track-detail: 0em;
+$type-track-micro: 0em;
+$type-track-ui: 0em;
+$type-word-spacing: normal;
+
+$type-case-display: uppercase;
+$type-case-heading: uppercase;
+$type-case-subheading: uppercase;
+$type-case-lead: none;
+$type-case-body: none;
+$type-case-detail: uppercase;
+$type-case-ui: uppercase;
+
+$type-line-display: 0.95;
+$type-line-heading: 1.05;
+$type-line-subheading: 1.2;
+$type-line-lead: 1.55;
+$type-line-body: 1.6;
+$type-line-detail: 1.4;

@@ -15,28 +15,108 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 */
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media only screen and (max-width: 37.5em) {
-      @content;
-    } //600px
-  }
-  @if $breakpoint == tab-port {
-    @media only screen and (max-width: 56.25em) {
-      @content;
-    } //900px
-  }
-  @if $breakpoint == tab-land {
-    @media only screen and (max-width: 75em) {
-      @content;
-    } //1200px
-  }
-  @if $breakpoint == big-desktop {
-    @media only screen and (min-width: 112.5em) {
-      @content;
-    } //1800
-  }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) {
+            @content;
+        } //600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) {
+            @content;
+        } //900px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) {
+            @content;
+        } //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) {
+            @content;
+        } //1800
+    }
 }
 
 @mixin secondaryFont {
-  font-family: 'Overpass', sans-serif;
+    font-family: $fontPrimary;
+}
+
+@mixin type-display {
+    font-family: $fontPrimary;
+    font-size: $type-size-display;
+    font-weight: $type-weight-display;
+    letter-spacing: $type-track-display;
+    word-spacing: $type-word-spacing;
+    text-transform: $type-case-display;
+    line-height: $type-line-display;
+}
+
+@mixin type-heading {
+    font-family: $fontPrimary;
+    font-size: $type-size-heading;
+    font-weight: $type-weight-heading;
+    letter-spacing: $type-track-heading;
+    word-spacing: $type-word-spacing;
+    text-transform: $type-case-heading;
+    line-height: $type-line-heading;
+}
+
+@mixin type-subheading {
+    font-family: $fontPrimary;
+    font-size: $type-size-subheading;
+    font-weight: $type-weight-subheading;
+    letter-spacing: $type-track-subheading;
+    word-spacing: $type-word-spacing;
+    text-transform: $type-case-subheading;
+    line-height: $type-line-subheading;
+}
+
+@mixin type-lead {
+    font-family: $fontPrimary;
+    font-size: $type-size-lead;
+    font-weight: $type-weight-lead;
+    letter-spacing: $type-track-lead;
+    word-spacing: $type-word-spacing;
+    text-transform: $type-case-lead;
+    line-height: $type-line-lead;
+}
+
+@mixin type-body {
+    font-family: $fontPrimary;
+    font-size: $type-size-body;
+    font-weight: $type-weight-body;
+    letter-spacing: $type-track-body;
+    word-spacing: $type-word-spacing;
+    text-transform: $type-case-body;
+    line-height: $type-line-body;
+}
+
+@mixin type-detail {
+    font-family: $fontPrimary;
+    font-size: $type-size-detail;
+    font-weight: $type-weight-detail;
+    letter-spacing: $type-track-detail;
+    word-spacing: $type-word-spacing;
+    text-transform: $type-case-detail;
+    line-height: $type-line-detail;
+}
+
+@mixin type-ui {
+    font-family: $fontPrimary;
+    font-size: $type-size-detail;
+    font-weight: 500;
+    letter-spacing: $type-track-ui;
+    word-spacing: $type-word-spacing;
+    text-transform: $type-case-ui;
+    line-height: $type-line-detail;
+}
+
+@mixin type-label-data {
+    font-family: $fontMono;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: $type-track-detail;
+    word-spacing: $type-word-spacing;
+    text-transform: uppercase;
+    line-height: $type-line-detail;
 }

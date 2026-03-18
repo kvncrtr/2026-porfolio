@@ -1,42 +1,37 @@
 .heading-primary {
-  font-size: 6rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  @include type-display;
   text-align: center;
   @include respond(phone) {
-    font-size: 4.5rem;
+    font-size: $type-size-display-mobile;
   }
 }
 
 .heading-sec {
   &__mb-bg {
-    margin-bottom: 11rem;
+    margin-bottom: 13rem;
     @include respond(tab-port) {
-      margin-bottom: 8rem;
+      margin-bottom: 10rem;
     }
   }
 
   &__mb-med {
-    margin-bottom: 9rem;
+    margin-bottom: 11rem;
     @include respond(tab-port) {
-      margin-bottom: 8rem;
+      margin-bottom: 9rem;
     }
   }
 
   &__main {
     display: block;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    letter-spacing: 3px;
+    @include type-heading;
     text-align: center;
     margin-bottom: 3.5rem;
     position: relative;
     &--lt {
-      color: #fff;
+      color: $type-color-strong;
       &::after {
         content: '';
-        background: #fff !important;
+        background: $type-color-strong !important;
       }
     }
     &::after {
@@ -59,27 +54,23 @@
   &__sub {
     display: block;
     text-align: center;
-    color: #777;
-    font-size: 2rem;
-    font-weight: 500;
+    @include type-lead;
+    color: $type-color-muted;
     max-width: 80rem;
     margin: auto;
-    line-height: 1.6;
 
     @include respond(phone) {
-      font-size: 1.8rem;
+      font-size: $type-size-lead-mobile;
     }
 
     &--lt {
-      color: #eee;
+      color: $type-color-strong;
     }
   }
 }
 
 .heading-sm {
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  @include type-subheading;
 }
 
 .main-container {
@@ -89,14 +80,15 @@
 }
 
 .btn {
-  background: #fff;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  background: $colorBgSurfaceAlt;
+  color: $type-color-strong;
+  text-transform: $type-case-ui;
+  letter-spacing: $type-track-ui;
   display: inline-block;
   font-weight: 700;
   border-radius: $commonBorderRadius;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid $colorBorderSubtle;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
   transition: transform .3s;
 
   &:hover {
@@ -105,20 +97,20 @@
 
   &--bg {
     padding: 1.5rem 8rem;
-    font-size: 2rem;
+    font-size: $type-size-lead;
   }
   &--med {
     padding: 1.5rem 5rem;
-    font-size: 1.6rem;
+    font-size: $type-size-body;
   }
 
   &--theme {
     background: $themeClrPrimary;
-    color: #fff;
+    color: $type-color-inverse;
   }
   &--theme-inv {
-    color: $themeClrPrimary;
-    background: #fff;
+    color: $type-color-strong;
+    background: transparent;
     border: 2px solid $themeClrPrimary;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px);
@@ -126,21 +118,20 @@
 }
 
 .sec-pad {
-  padding: 12rem 0;
+  padding: 16rem 0;
   @include respond(tab-port) {
-    padding: 8rem 0;
+    padding: 10rem 0;
   }
 }
 
 .text-primary {
-  color: #fff;
-  font-size: 2.2rem;
+  @include type-lead;
+  color: $type-color-accent;
   text-align: center;
   width: 100%;
-  line-height: 1.6;
 
   @include respond(phone) {
-    font-size: 2rem;
+    font-size: $type-size-lead-mobile;
   }
 }
 

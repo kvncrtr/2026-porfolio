@@ -1,6 +1,6 @@
 .main-footer {
-  background: #000;
-  color: #fff;
+  background: $colorBgSurface;
+  color: $type-color-strong;
   &__upper {
     display: flex;
     justify-content: space-between;
@@ -30,9 +30,8 @@
 
   &__short-desc {
     margin-top: 2rem;
-    color: #eee;
-    font-size: 1.5rem;
-    line-height: 1.7;
+    @include type-body;
+    color: $type-color-muted;
   }
 
   &__social-cont {
@@ -49,9 +48,9 @@
 
   &__lower {
     padding: 4rem 0;
-    border-top: 1px solid #444;
-    color: #eee;
-    font-size: 1.2rem;
+    border-top: 1px solid $colorBorderSubtle;
+    @include type-detail;
+    color: $type-color-muted;
     text-align: left;
     text-align: center;
     a {
