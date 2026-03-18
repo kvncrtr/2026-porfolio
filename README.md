@@ -4,9 +4,12 @@ I build fast, reliable web products that solve real business problems.
 
 If you need a developer who can move from requirements to architecture to production delivery without constant hand-holding, this is exactly the work I do.
 
+Live portfolio: https://kevin-carter.netlify.app/
+
 Based in Atlanta. Open to remote, hybrid, and on-site opportunities.
 
 I am open to:
+
 - Full-time software engineering roles
 - Contract product development
 - Business website builds and rebuilds
@@ -49,6 +52,7 @@ End-to-end delivery across UI/UX, frontend, and backend for a childcare website 
 
 ## Professional Links
 
+- Portfolio: https://kevin-carter.netlify.app/
 - LinkedIn: https://www.linkedin.com/in/kevin-carter-software-engineer/
 - GitHub: https://github.com/kvncrtr
 - X: https://x.com/kvncrtrr
